@@ -48,3 +48,28 @@ button {
         transform: scale(1);
     }
 }
+
+
+.col-md-4 {
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    display: block;
+}
+
+.project-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+    width: 80%;
+}
