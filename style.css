@@ -23,7 +23,7 @@ h1 {
 .intro {
     font-weight: bold;
     display: inline-block;
-    animation: moveText 5s forwards;
+    animation: moveText 3s forwards;
     padding-top: 300px;
 }
 
