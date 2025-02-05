@@ -4,6 +4,7 @@
 
 .project-image {
     width: 100%;
+    height: 550px;
     display: block;
 }
 
@@ -24,4 +25,9 @@
 
 body {
     background-color: #96E3E3;
+}
+
+img.image-fluid {
+    width: 400px;
+    height: 200px;
 }
