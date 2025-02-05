@@ -1,5 +1,10 @@
 body {
-    background-color: #96E3E3;
+    background-image: url('/img/teacher\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .d-inline {
