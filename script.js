@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+    $('.hiddenContent').hide();
+
     $('.question').click(function () {
         $(this).next('.hiddenContent').slideToggle();
     });

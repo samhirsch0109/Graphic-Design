@@ -24,6 +24,7 @@
     border-radius: 5px;
     display: none;
     width: 80%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
