@@ -9,22 +9,3 @@ ul {
     font-style: normal;
     font-size: large;
 }
-
-.bg-hero-img {
-    background-image: url('https://picsum.photos/1300/500');
-    background-position: top center;
-    margin: 25px;
-    color: white;
-
-
-}
-
-.img-fluid {
-    border-color: aliceblue;
-    border-width: 14px;
-}
-
-.mb-3 {
-    font-family: "Kanit", serif;
-    font-weight: 700;
-}
