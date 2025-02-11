@@ -1,11 +1,30 @@
 body {
-    background-color: #96E3E3;
+    background-color: #0474bece;
 }
 
 .class-details,
 ul {
-    font-family: "Red Hat Display", serif;
+    font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: large;
+}
+
+.bg-hero-img {
+    background-image: url('https://picsum.photos/1300/500');
+    background-position: top center;
+    margin: 25px;
+    color: white;
+
+
+}
+
+.img-fluid {
+    border-color: aliceblue;
+    border-width: 14px;
+}
+
+.mb-3 {
+    font-family: "Kanit", serif;
+    font-weight: 700;
 }
