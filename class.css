@@ -7,9 +7,6 @@ body {
 .navbar {
     font-family: "Red Hat Display", sans-serif;
     background-color: rgba(255, 255, 255, 0.95);
-    /* Slightly transparent for a modern effect */
-    backdrop-filter: blur(10px);
-    /* Smooth glassmorphism effect */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -55,7 +52,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url('heroimg.jpg') no-repeat center center/cover;
+    background: url('img/heroimg.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     align-items: center;
@@ -69,6 +66,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     color: white;
+}
+
+.styled-image {
+    border: 5px solid #ddd;
+    /* Soft gray border */
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Cards */
@@ -86,6 +91,11 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.question:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 .hiddenContent {

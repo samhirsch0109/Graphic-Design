@@ -1,15 +1,12 @@
-/* 🌟 General Styles */
 body {
     background-color: #E6F7F7;
     /* Softer pastel for a cleaner look */
     font-family: "Open Sans", sans-serif;
     color: #222;
-    /* Dark gray for better readability */
     margin: 0;
     padding: 0;
 }
 
-/* 🏷️ Headings */
 h1,
 h2 {
     font-family: "Red Hat Display", sans-serif;
@@ -30,13 +27,9 @@ h2 {
     color: #004B87;
 }
 
-/* 📌 Navbar Styling */
 .navbar {
     font-family: "Red Hat Display", sans-serif;
     background-color: rgba(255, 255, 255, 0.95);
-    /* Slightly transparent for a modern effect */
-    backdrop-filter: blur(10px);
-    /* Smooth glassmorphism effect */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,7 +56,6 @@ h2 {
     color: #0073e6;
 }
 
-/* Underline Animation */
 .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
@@ -80,7 +72,6 @@ h2 {
     left: 0;
 }
 
-/* 🎥 Responsive Video Container */
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +99,6 @@ h2 {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* 📺 Responsive Iframe Styling */
 .container1 {
     position: relative;
     width: 100%;
@@ -128,14 +118,12 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-/* 🖼️ Image Styling */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-/* 📱 Responsive Layout Adjustments */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -148,4 +136,10 @@ img {
     .navbar-nav {
         flex-direction: column;
     }
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
 }
