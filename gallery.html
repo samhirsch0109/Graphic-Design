@@ -2,29 +2,21 @@
 <html lang="en">
   <head>
     <title>Gallery</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="gallery.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
-  <body>
+  <header>
     <nav class="navbar bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"> Gallery </a>
@@ -64,76 +56,445 @@
         </div>
       </div>
     </nav>
+  </header>
 
+  <body>
     <main>
       <div class="text-center">
-        <h3>
-          Here are some examples of past students' work! Click on the image to
-          see what the project is about.
-        </h3>
+        <h3>Click the button to view each project in a carousel.</h3>
       </div>
 
-      <div class="row p-3">
-        <div class="container mt-5">
-          <div class="row text-center">
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/hawaiiposter.jpg" class="img-fluid project-image" />
-              <div
-                class="card-body text-center project-description"
-                style="display: none"
-              >
-                Poster designed to advertise Hawaii.
+      <div class="container mt-5">
+        <div class="row text-center">
+          <!-- Project 1 -->
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="position-relative project-container">
+              <img src="img/blue.jpeg" class="img-fluid project-image" />
+              <h5 class="text-overlay">Adobe Photoshop Projects</h5>
+              <div class="overlay">
+                <button
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carouselModal1"
+                >
+                  View Projects
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/typography.png" class="img-fluid project-image" />
-              <div
-                class="card-body text-center project-description"
-                style="display: none"
-              >
-                Ariana Grande picture made out of different symbols.
+          <!-- Project 2 -->
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="position-relative project-container">
+              <img src="img/blue.jpeg" class="img-fluid project-image" />
+              <h5 class="text-overlay">Logos</h5>
+              <div class="overlay">
+                <button
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carouselModal2"
+                >
+                  View Projects
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/company1.jpg" class="img-fluid project-image" />
-              <div
-                class="card-body text-center project-description"
-                style="display: none"
-              >
-                A collection of restaurant logos showcasing unique branding and
-                design concepts.
+          <!-- Project 3 -->
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="position-relative project-container">
+              <img src="img/blue.jpeg" class="img-fluid project-image" />
+              <h5 class="text-overlay">More Restaurant Projects</h5>
+              <div class="overlay">
+                <button
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carouselModal3"
+                >
+                  View Projects
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/candyface.png" class="img-fluid project-image" />
-              <div
-                class="card-body text-center project-description"
-                style="display: none"
-              >
-                Face made out of candy.
+          <!-- Project 4 -->
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="position-relative project-container">
+              <img src="img/blue.jpeg" class="img-fluid project-image" />
+              <h5 class="text-overlay">More Photoshop Projects</h5>
+              <div class="overlay">
+                <button
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carouselModal4"
+                >
+                  View Projects
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/menus.jpg" class="img-fluid project-image" />
+      <!-- Modal for Project 1 -->
+      <div
+        class="modal fade"
+        id="carouselModal1"
+        tabindex="-1"
+        aria-labelledby="carouselModal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="carouselModal1Label">
+                Adobe Photoshop
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
               <div
-                class="card-body text-center project-description"
-                style="display: none"
+                id="carouselExample1"
+                class="carousel slide"
+                data-bs-ride="carousel"
               >
-                Menus designed for restaurant project.
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/nj.JPG"
+                      class="d-block w-100"
+                      alt="Project 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 1</h5>
+                      <p>Designed as a travel poster.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/color.jpg"
+                      class="d-block w-100"
+                      alt="Project 2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 2</h5>
+                      <p>Typography art made of symbols.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/candyface.png"
+                      class="d-block w-100"
+                      alt="Project 3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 3</h5>
+                      <p>Creative menu design for a restaurant project.</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample1"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample1"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-md-4 p-3 mb-2">
-              <img src="img/logo.JPG" class="img-fluid project-image" />
+      <!-- Modal for Project 2 -->
+      <div
+        class="modal fade"
+        id="carouselModal2"
+        tabindex="-1"
+        aria-labelledby="carouselModal2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="carouselModal2Label">Logos</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
               <div
-                class="card-body text-center project-description"
-                style="display: none"
+                id="carouselExample2"
+                class="carousel slide"
+                data-bs-ride="carousel"
               >
-                Restaurant logo on a mug.
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/hawaiiposter.jpg"
+                      class="d-block w-100"
+                      alt="Project 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Poster of Hawaii</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/company1.jpg"
+                      class="d-block w-100"
+                      alt="Project 2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 2</h5>
+                      <p>Typography art made of symbols.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/logo.JPG"
+                      class="d-block w-100"
+                      alt="Project 3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 3</h5>
+                      <p>Creative menu design for a restaurant project.</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Project 3 -->
+      <div
+        class="modal fade"
+        id="carouselModal3"
+        tabindex="-1"
+        aria-labelledby="carouselModal3Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="carouselModal3Label">
+                Restaurant Logo Projects
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselExample3"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/menus.jpg"
+                      class="d-block w-100"
+                      alt="Project 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 1</h5>
+                      <p>Designed as a travel poster.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/IMG_4462.JPG"
+                      class="d-block w-100"
+                      alt="Project 2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 2</h5>
+                      <p>Typography art made of symbols.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tshirt.JPG"
+                      class="d-block w-100"
+                      alt="Project 3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 3</h5>
+                      <p>Creative menu design for a restaurant project.</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample3"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample3"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Project 4 -->
+      <div
+        class="modal fade"
+        id="carouselModal4"
+        tabindex="-1"
+        aria-labelledby="carouselModal4Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="carouselModal4Label">
+                Photoshop Projects
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselExample4"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/apartment.png"
+                      class="d-block w-100"
+                      alt="Project 1"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 1</h5>
+                      <p>Designed as a travel poster.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/todolist.JPG"
+                      class="d-block w-100"
+                      alt="Project 2"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 2</h5>
+                      <p>Typography art made of symbols.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/typography.png"
+                      class="d-block w-100"
+                      alt="Project 3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Project 3</h5>
+                      <p>Creative menu design for a restaurant project.</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
@@ -141,14 +502,8 @@
       </div>
     </main>
 
-    <footer>
-      <!-- place footer here -->
-    </footer>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
