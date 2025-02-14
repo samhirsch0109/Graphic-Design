@@ -143,3 +143,10 @@ footer {
     color: white;
     padding: 10px 0;
 }
+
+.tutorials img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
