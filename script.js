@@ -21,3 +21,18 @@ $(document).ready(function () {
         $(event.currentTarget).next('.project-description').fadeOut(500);
     });
 })
+
+
+//code from tutorial 
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+        $("#scrollTopBtn").fadeIn();
+    } else {
+        $("#scrollTopBtn").fadeOut();
+    }
+});
+
+$("#scrollTopBtn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+});

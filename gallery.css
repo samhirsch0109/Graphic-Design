@@ -177,6 +177,7 @@ h3 {
     display: block;
     border: 2px solid white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Text Overlay */
@@ -218,4 +219,23 @@ h3 {
     /* Ensures images fill the space without distortion */
     border-radius: 10px;
     /* Optional: rounded corners */
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6ec7eb;
+    color: rgb(247, 238, 238);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    transition: background 0.3s ease-in-out;
+}
+
+#scrollTopBtn:hover {
+    background: #c6e3ff;
 }
