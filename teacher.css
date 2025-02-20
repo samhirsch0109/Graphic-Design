@@ -150,10 +150,30 @@ footer {
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3 ease;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
-  }
+}
 
 .tutorials img:hover {
     transform: scale(1.08);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8);
 }
-  
+
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6ec7eb;
+    color: rgb(247, 238, 238);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    transition: background 0.3s ease-in-out;
+}
+
+#scrollTopBtn:hover {
+    background: #c6e3ff;
+}
