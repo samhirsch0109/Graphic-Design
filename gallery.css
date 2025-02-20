@@ -239,3 +239,9 @@ h3 {
 #scrollTopBtn:hover {
     background: #c6e3ff;
 }
+
+.ivyprestofont {
+font-family: "ivypresto-display", serif;
+font-weight: 300;
+font-style: italic;
+}
