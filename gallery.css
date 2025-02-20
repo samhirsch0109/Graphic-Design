@@ -136,7 +136,7 @@ h3 {
 
 /* Container for better width */
 .container {
-    max-width: 1300px;
+    max-width: 80%;
     /* Increased from 1200px */
     margin: 0 auto;
     padding: 20px;
@@ -170,7 +170,7 @@ h3 {
 /* Image Styling */
 .project-image {
     width: 100%;
-    height: 350px;
+    height: auto;
     /* Adjust as needed */
     object-fit: cover;
     border-radius: 15px;
