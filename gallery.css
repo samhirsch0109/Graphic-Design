@@ -180,7 +180,6 @@ h3 {
 
 }
 
-/* Text Overlay */
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -197,13 +196,17 @@ h3 {
 }
 
 /* Button Styling */
-.text-overlay .btn-light {
+.overlay .btn-light {
     background: white;
     border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease;
+    position: relative;
+    top: 90px;
+    /* Move the button down */
 }
 
 .text-overlay .btn-light:hover {
@@ -212,13 +215,9 @@ h3 {
 
 .modal-content img {
     width: 100%;
-    /* Makes image responsive */
     height: 400px;
-    /* Set a fixed height for all images */
     object-fit: cover;
-    /* Ensures images fill the space without distortion */
     border-radius: 10px;
-    /* Optional: rounded corners */
 }
 
 #scrollTopBtn {
