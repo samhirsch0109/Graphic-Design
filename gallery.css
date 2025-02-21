@@ -249,3 +249,80 @@ h3 {
     font-weight: 400;
     font-style: normal;
 }
+
+#tunnel-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeOut 0.5s forwards 2.5s; /* Fades out after 2.5s */
+  }
+  
+  #tunnel-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeOut 0.3s forwards 1.5s; /* Fades out after 1.5s */
+  }
+  
+  #tunnel-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .tunnel {
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    background: radial-gradient(circle, white 5%, black 15%, white 25%, black 35%, white 45%, black 55%, transparent 65%);
+    background-size: cover;
+    animation: tunnelSpeed 1.5s linear forwards;
+  }
+  
+  @keyframes tunnelSpeed {
+    0% {
+      transform: scale(0.1); /* Starts far away */
+    }
+    100% {
+      transform: scale(2.5); /* Moves forward, creating speed effect */
+    }
+  }
+  
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  /* Fade out after the tunnel effect */
+  .tunnel-exit {
+    animation: fadeOut 0.3s forwards 1.5s;
+  }
+  
+  
+  
