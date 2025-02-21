@@ -50,16 +50,7 @@ function typeText() {
 
 typeText();
 
-$(document).ready(function () {
-    setTimeout(() => {
-      $(".tunnel").addClass("tunnel-exit"); // Triggers fade out
-    }, 1500);
-  
-    setTimeout(() => {
-      $("#tunnel-animation").remove(); // Removes after fade
-    }, 1800);
-  });
-  
+
   
   
   
