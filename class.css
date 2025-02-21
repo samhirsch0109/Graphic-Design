@@ -95,11 +95,16 @@ body {
     transform: translateY(-5px);
 }
 
+.text-center mb-4 {
+    padding-top: 60px;
+}
+
 /* FAQ Styling */
 .question {
     font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
+    padding-top: 30px;
 }
 
 .question:hover {
