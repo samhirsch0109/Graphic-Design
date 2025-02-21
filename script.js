@@ -36,3 +36,16 @@ $(window).scroll(function () {
 $("#scrollTopBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 });
+
+let text = "Welcome to the Gallery!";
+let index = 0;
+
+function typeText() {
+    if (index < text.length) {
+        $("#typing-effect").append(text.charAt(index));
+        index++;
+        setTimeout(typeText, 100);
+    }
+}
+
+typeText();
