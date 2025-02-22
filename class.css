@@ -31,7 +31,7 @@ body {
 .navbar-nav .nav-link {
     position: relative;
     text-decoration: none;
-    color: #003366;
+    color: #003366 !important;
     font-size: 1.1rem;
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
@@ -105,6 +105,7 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     padding-top: 30px;
+    font-family: "ivypresto-display", serif;
 }
 
 .question:hover {
@@ -123,4 +124,18 @@ footer {
     background-color: #0056b3;
     color: white;
     padding: 10px 0;
+}
+
+.hero-overlay h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+.hero-overlay p {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-family: "ivypresto-display", serif;
 }

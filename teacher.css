@@ -1,6 +1,6 @@
 body {
     background-color: #E6F7F7;
-    font-family: "Poppins", sans-serif;
+    font-family: "ivypresto-display", serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
@@ -45,10 +45,10 @@ h2 {
 .navbar-nav .nav-link {
     position: relative;
     text-decoration: none;
-    color: #003366;
     font-size: 1.1rem;
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
+    color: #003366 !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -189,7 +189,7 @@ footer {
 .teacher-name {
     font-size: 28px;
     font-weight: 600;
-    color: #343a40;
+    color: #0056b3;
 }
 
 .teacher-details {

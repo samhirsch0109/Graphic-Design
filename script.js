@@ -37,6 +37,8 @@ $("#scrollTopBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
+//gallery title
+
 let text = "Welcome to the Gallery!";
 let index = 0;
 
@@ -51,6 +53,48 @@ function typeText() {
 typeText();
 
 
-  
-  
-  
+//vue for gallery carousels 
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            pageTitle: 'Gallery',
+            projects: [
+                {
+                    title: 'Adobe Photoshop Projects',
+                    modalTitle: 'Adobe Photoshop',
+                    bgImage: 'img/bluebg.jpeg',
+                    images: ['img/nj.JPG', 'img/color.jpg', 'img/candyface.png']
+                },
+                {
+                    title: 'Logos',
+                    modalTitle: 'Logos',
+                    bgImage: 'img/bluebg.jpeg',
+                    images: ['img/hawaiiposter.jpg', 'img/company1.jpg', 'img/logo.JPG']
+                },
+                {
+                    title: 'More Restaurant Projects',
+                    modalTitle: 'Restaurant Logo Projects',
+                    bgImage: 'img/bluebg.jpeg',
+                    images: ['img/menus.jpg', 'img/IMG_4462.JPG', 'img/tshirt.JPG']
+                },
+                {
+                    title: 'More Photoshop Projects',
+                    modalTitle: 'Photoshop Projects',
+                    bgImage: 'img/bluebg.jpeg',
+                    images: ['img/apartment.png', 'img/todolist.JPG', 'img/typography.png']
+                }
+            ]
+        };
+    },
+    methods: {
+        openModal(index) {
+            const modalId = "#carouselModal" + index;
+            const modalEl = document.querySelector(modalId);
+            const modal = new bootstrap.Modal(modalEl);
+            modal.show();
+        }
+    }
+}).mount('#app');
+
