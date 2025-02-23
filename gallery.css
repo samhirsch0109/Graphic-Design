@@ -22,7 +22,10 @@ h3 {
 .col-md-6,
 .col-sm-12 {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    /* Reduce space here */
+    padding: 10px;
+    /* Adjust padding if necessary */
 }
 
 /* Image Styling */
