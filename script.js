@@ -54,9 +54,8 @@ typeText();
 
 
 //vue for gallery carousels 
-const { createApp } = Vue;
+const vue_app = Vue.createApp({
 
-createApp({
     data() {
         return {
             pageTitle: 'Gallery',
@@ -96,5 +95,6 @@ createApp({
             modal.show();
         }
     }
-}).mount('#app');
+})
+vue_app.mount("#vue_app")
 

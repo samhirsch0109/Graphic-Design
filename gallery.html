@@ -29,7 +29,7 @@
   </head>
   <body>
     <div id="app">
-      <!-- Navigation Header -->
+      <!-- nav -->
       <header>
         <nav class="navbar bg-body-tertiary sticky-top">
           <div class="container-fluid">
@@ -84,103 +84,101 @@
           </h3>
         </div>
         <div class="row text-center mt-5">
-          <!-- Loop through projects -->
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 p-3"
-            v-for="(project, index) in projects"
-            :key="index"
-          >
-            <div class="position-relative project-container">
-              <img
-                :src="project.bgImage"
-                class="img-fluid project-image"
-                alt="Project Background"
-              />
-              <h5 class="text-overlay ivyprestofont">{{ project.title }}</h5>
-              <div class="overlay">
-                <button
-                  class="btn btn-light rounded-pill px-4 py-2"
-                  @click="openModal(index)"
-                >
-                  View Projects
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modals -->
-        <div v-for="(project, index) in projects" :key="'modal-'+index">
-          <div
-            class="modal fade"
-            :id="'carouselModal' + index"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">{{ project.modalTitle }}</h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div
-                    :id="'carouselExample' + index"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div
-                        class="carousel-item"
-                        v-for="(image, imgIndex) in project.images"
-                        :class="{ active: imgIndex === 0 }"
-                        :key="imgIndex"
-                      >
-                        <img
-                          :src="image"
-                          class="d-block w-100"
-                          :alt="'Project image ' + (imgIndex + 1)"
-                        />
-                        <div class="carousel-caption d-none d-md-block"></div>
-                      </div>
-                    </div>
+          <main id="vue_app">
+            <div class="row text-center mt-5">
+              <!-- Loop through projects -->
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 p-3"
+                v-for="(project, index) in projects"
+                :key="index"
+              >
+                <div class="position-relative project-container">
+                  <img
+                    :src="project.bgImage"
+                    class="img-fluid project-image"
+                    alt="Project Background"
+                  />
+                  <h5 class="text-overlay ivyprestofont">{{ project.title }}</h5>
+                  <div class="overlay">
                     <button
-                      class="carousel-control-prev"
-                      type="button"
-                      :data-bs-target="'#carouselExample' + index"
-                      data-bs-slide="prev"
+                      class="btn btn-light rounded-pill px-4 py-2"
+                      @click="openModal(index)"
                     >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      :data-bs-target="'#carouselExample' + index"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
+                      View Projects
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </main>
-
+          
+            <!-- Modals -->
+            <div v-for="(project, index) in projects" :key="'modal-'+index">
+              <div
+                class="modal fade"
+                :id="'carouselModal' + index"
+                tabindex="-1"
+                aria-hidden="true"
+                :ref="'modal' + index"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">{{ project.modalTitle }}</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div
+                        :id="'carouselExample' + index"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner">
+                          <div
+                            class="carousel-item"
+                            v-for="(image, imgIndex) in project.images"
+                            :class="{ active: imgIndex === 0 }"
+                            :key="imgIndex"
+                          >
+                            <img
+                              :src="image"
+                              class="d-block w-100"
+                              :alt="'Project image ' + (imgIndex + 1)"
+                            />
+                            <div class="carousel-caption d-none d-md-block"></div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          :data-bs-target="'#carouselExample' + index"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          :data-bs-target="'#carouselExample' + index"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          
+          
       <!-- Scroll To Top Button -->
       <button id="scrollTopBtn" title="Go to top">⬆</button>
     </div>
@@ -196,3 +194,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+ 
