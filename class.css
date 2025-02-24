@@ -104,7 +104,7 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
-    padding-top: 30px;
+    padding-top: 10px;
     font-family: "ivypresto-display", serif;
 }
 
@@ -138,4 +138,11 @@ footer {
 
 h2 {
     font-family: "ivypresto-display", serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
 }
