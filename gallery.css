@@ -8,12 +8,12 @@ h2,
 h3 {
     text-align: center;
     margin-top: 30px;
-    font-family: "Oswald";
+    font-family: "Red Hat Display", sans-serif;
     color: #003366;
 }
 
 h3 {
-    font-family: "ivypresto-display", serif;
+    font-family: "Red Hat Display", sans-serif;
     font-style: normal;
     font-size: larger;
 }

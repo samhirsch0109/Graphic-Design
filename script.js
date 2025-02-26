@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.hiddenContent').hide();
 
     $('.question').click(function () {
+        $(this).toggleClass('active');
         $(this).next('.hiddenContent').slideToggle();
     });
 
@@ -23,7 +24,7 @@ $(document).ready(function () {
 })
 
 
-//code from tutorial 
+//code for top button
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
